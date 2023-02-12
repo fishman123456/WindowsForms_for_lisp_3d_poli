@@ -14,7 +14,7 @@ namespace WindowsForms_for_lisp_3d_poli
         public static void sbor_text()
         {
            
-         
+          
         }   
         
 

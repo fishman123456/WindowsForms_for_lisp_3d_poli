@@ -98,7 +98,7 @@
             this.rez_1.Name = "rez_1";
             this.rez_1.Size = new System.Drawing.Size(200, 25);
             this.rez_1.TabIndex = 3;
-            this.rez_1.Text = "резерв";
+            this.rez_1.Text = "имя кабеля заполнить список";
             this.rez_1.UseVisualStyleBackColor = false;
             this.rez_1.Click += new System.EventHandler(this.rez_1_Click);
             // 
@@ -235,6 +235,7 @@
             this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox4.Size = new System.Drawing.Size(200, 200);
             this.textBox4.TabIndex = 13;
+            this.textBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mouse_click);
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // Form1
