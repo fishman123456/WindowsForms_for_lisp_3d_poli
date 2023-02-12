@@ -242,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 372);
+            this.ClientSize = new System.Drawing.Size(934, 361);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.fonts_options);
@@ -261,7 +261,9 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(600, 400);
+            this.MaximumSize = new System.Drawing.Size(950, 400);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(950, 400);
             this.Name = "Form1";
             this.Text = "U83_F";
             this.ResumeLayout(false);
