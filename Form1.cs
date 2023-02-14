@@ -38,6 +38,8 @@ namespace WindowsForms_for_lisp_3d_poli
             t_three.SetToolTip(textBox3, "Конец кабельной линии (X Y Z)");
             ToolTip t_four = new ToolTip();
             t_four.SetToolTip(textBox4, "Имя кабельной линии (X Y Z)");
+            ToolTip t_five = new ToolTip();
+            t_five.SetToolTip(rez_1, "Для создания списка нажми меня");
         }
 
         private void clear_beg_Click(object sender, EventArgs e)
