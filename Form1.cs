@@ -59,11 +59,13 @@ namespace WindowsForms_for_lisp_3d_poli
                     name_kab = textBox4.Text.ToString();
                     sbor +=s;
                     sbor += "\" \"\")\n";
-                    // дополняем координатами начало, конец. Середину потом запихнем
+                    // дополняем координатами начало, конец. Середину потом запихнем 14-02-2023
 
                     sbor += "(command \"_.3Dpoly\" '(";
                     sbor += textBox3.Lines[numstr].ToString(); // место для начала кабеля переменная стринг
                     sbor += ")";
+
+                    // здесь нужно середину вставить
                     sbor+= "'(" +
                         textBox1.Lines[numstr].ToString() + // место для конца кабеля переменная стринг
                         ")";
