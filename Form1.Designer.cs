@@ -78,6 +78,7 @@
             this.textBox2.Size = new System.Drawing.Size(220, 200);
             this.textBox2.TabIndex = 1;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.mouse_click);
             // 
             // textBox3
             // 

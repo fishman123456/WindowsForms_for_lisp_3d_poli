@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
+
+using ToolTip = System.Windows.Forms.ToolTip;
 
 namespace WindowsForms_for_lisp_3d_poli
 {
@@ -26,7 +29,15 @@ namespace WindowsForms_for_lisp_3d_poli
             InitializeComponent();
             openFileDialog1.Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
             saveFileDialog1.Filter = "Text files(*.lsp)|*.lsp|All files(*.*)|*.*";
-
+            // описание подсказок
+            ToolTip t_one = new ToolTip();
+            t_one.SetToolTip(textBox1, "Начало кабельной линии (X Y Z)");
+            ToolTip t_two = new ToolTip();
+            t_two.SetToolTip(textBox2, "Промежуточные точки кабельной линии (X Y Z)");
+            ToolTip t_three = new ToolTip();
+            t_three.SetToolTip(textBox3, "Конец кабельной линии (X Y Z)");
+            ToolTip t_four = new ToolTip();
+            t_four.SetToolTip(textBox4, "Имя кабельной линии (X Y Z)");
         }
 
         private void clear_beg_Click(object sender, EventArgs e)
@@ -51,6 +62,7 @@ namespace WindowsForms_for_lisp_3d_poli
             sbor += "(defun  C:PL100 (/ x1 x2 x3)\n";
             sbor += "(vl-load-com)\n";
             int numstr = 0;
+            int numstr_centr = 0;
             if (textBox4.Text.Length > 0)
             {
                 foreach (string s in str_box_name)
@@ -67,6 +79,13 @@ namespace WindowsForms_for_lisp_3d_poli
                     sbor += ")";
 
                     // здесь нужно середину вставить
+                    foreach (var item in centr)
+                    {
+                        sbor += "'(";
+                        sbor += textBox2.Lines[numstr_centr].ToString(); // место для промежуточных вершин кабеля переменная стринг
+                        sbor += ")";
+                        numstr_centr++;
+                    }
                     sbor+= "'(" +
                         textBox1.Lines[numstr].ToString() + // место для конца кабеля переменная стринг
                         ")";
@@ -153,7 +172,7 @@ namespace WindowsForms_for_lisp_3d_poli
         {
             try
             {
-               // str_box_name.Add(textBox4.Text.ToString());
+                
 
             }
             catch (Exception ex)
@@ -166,17 +185,17 @@ namespace WindowsForms_for_lisp_3d_poli
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void mouse_click(object sender, MouseEventArgs e)
@@ -187,7 +206,7 @@ namespace WindowsForms_for_lisp_3d_poli
                 {
                     if (textBox3.Text == "\n")
                     {
-                        str_box_name.Add((string)textBox4.Text);
+                       // str_box_name.Add(textBox4.Text.Length.ToString());
                     }
                 }
                 MessageBox.Show(textBox4.Text.ToString());
