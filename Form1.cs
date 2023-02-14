@@ -18,6 +18,7 @@ namespace WindowsForms_for_lisp_3d_poli
         public string name_kab;
         public string sbor = " ";
         public List<string> str_box_name = new List<string>();
+        public List<string> centr = new List<string>();
         private IEnumerable<object> etr_box_name;
 
         public Form1()
@@ -94,24 +95,32 @@ namespace WindowsForms_for_lisp_3d_poli
 
         private void rez_1_Click(object sender, EventArgs e)
         {
-
+            // заполняем список текстбоксом 4, имя кабеля
             str_box_name.Append(textBox4.TextLength.ToString());
             if (!string.IsNullOrEmpty(Convert.ToString(textBox4.Text)))
             {
                 str_box_name= new List<string>();
                 string IdOrder = Convert.ToString(textBox4.Text.Trim());
-
-
                 string temp = IdOrder.Replace("\r\n", " ");
-
                 string[] text_name = Regex.Split(temp, " ");
-
                 for (int i = 0; i < text_name.Length; i++)
                 {
                     str_box_name.Add(text_name[i]);
                 }
             }
-
+            // заполняем список текстбоксом 2, координаты середины
+            centr.Append(textBox2.TextLength.ToString());
+            if (!string.IsNullOrEmpty(Convert.ToString(textBox2.Text)))
+            {
+                centr = new List<string>();
+                string IdOrder = Convert.ToString(textBox2.Text.Trim());
+                string temp = IdOrder.Replace("\r", "");
+                string[] centr_coor = temp.Split('\n');
+                for (int i = 0; i < centr_coor.Length; i++)
+                {
+                    centr.Add(centr_coor[i]);
+                }
+            }
         }
 
         private void rez_2_Click(object sender, EventArgs e)
