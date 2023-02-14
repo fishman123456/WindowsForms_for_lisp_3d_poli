@@ -58,45 +58,45 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(234, 66);
+            this.textBox1.Location = new System.Drawing.Point(240, 66);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(200, 200);
+            this.textBox1.Size = new System.Drawing.Size(220, 200);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(467, 66);
+            this.textBox2.Location = new System.Drawing.Point(470, 66);
             this.textBox2.Margin = new System.Windows.Forms.Padding(5);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(200, 200);
+            this.textBox2.Size = new System.Drawing.Size(220, 200);
             this.textBox2.TabIndex = 1;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(701, 66);
+            this.textBox3.Location = new System.Drawing.Point(700, 66);
             this.textBox3.Margin = new System.Windows.Forms.Padding(5);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox3.Size = new System.Drawing.Size(200, 200);
+            this.textBox3.Size = new System.Drawing.Size(220, 200);
             this.textBox3.TabIndex = 2;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // rez_1
             // 
             this.rez_1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.rez_1.Location = new System.Drawing.Point(235, 19);
+            this.rez_1.Location = new System.Drawing.Point(240, 19);
             this.rez_1.Name = "rez_1";
-            this.rez_1.Size = new System.Drawing.Size(200, 25);
+            this.rez_1.Size = new System.Drawing.Size(220, 20);
             this.rez_1.TabIndex = 3;
             this.rez_1.Text = "имя кабеля заполнить список";
             this.rez_1.UseVisualStyleBackColor = false;
@@ -105,9 +105,9 @@
             // rez_2
             // 
             this.rez_2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.rez_2.Location = new System.Drawing.Point(467, 19);
+            this.rez_2.Location = new System.Drawing.Point(470, 19);
             this.rez_2.Name = "rez_2";
-            this.rez_2.Size = new System.Drawing.Size(200, 25);
+            this.rez_2.Size = new System.Drawing.Size(220, 20);
             this.rez_2.TabIndex = 4;
             this.rez_2.Text = "резерв";
             this.rez_2.UseVisualStyleBackColor = false;
@@ -116,9 +116,9 @@
             // save_f
             // 
             this.save_f.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.save_f.Location = new System.Drawing.Point(701, 20);
+            this.save_f.Location = new System.Drawing.Point(701, 19);
             this.save_f.Name = "save_f";
-            this.save_f.Size = new System.Drawing.Size(200, 25);
+            this.save_f.Size = new System.Drawing.Size(220, 20);
             this.save_f.TabIndex = 5;
             this.save_f.Text = "сохранить в файл";
             this.save_f.UseVisualStyleBackColor = false;
@@ -127,9 +127,9 @@
             // clear_beg
             // 
             this.clear_beg.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.clear_beg.Location = new System.Drawing.Point(235, 288);
+            this.clear_beg.Location = new System.Drawing.Point(240, 288);
             this.clear_beg.Name = "clear_beg";
-            this.clear_beg.Size = new System.Drawing.Size(200, 25);
+            this.clear_beg.Size = new System.Drawing.Size(220, 20);
             this.clear_beg.TabIndex = 6;
             this.clear_beg.Text = "очистить начало";
             this.clear_beg.UseVisualStyleBackColor = false;
@@ -138,9 +138,9 @@
             // clear_centr
             // 
             this.clear_centr.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.clear_centr.Location = new System.Drawing.Point(472, 288);
+            this.clear_centr.Location = new System.Drawing.Point(470, 288);
             this.clear_centr.Name = "clear_centr";
-            this.clear_centr.Size = new System.Drawing.Size(200, 25);
+            this.clear_centr.Size = new System.Drawing.Size(220, 20);
             this.clear_centr.TabIndex = 7;
             this.clear_centr.Text = "очистьть промежуточные";
             this.clear_centr.UseVisualStyleBackColor = false;
@@ -149,9 +149,9 @@
             // clear_end
             // 
             this.clear_end.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.clear_end.Location = new System.Drawing.Point(701, 288);
+            this.clear_end.Location = new System.Drawing.Point(700, 288);
             this.clear_end.Name = "clear_end";
-            this.clear_end.Size = new System.Drawing.Size(200, 25);
+            this.clear_end.Size = new System.Drawing.Size(220, 20);
             this.clear_end.TabIndex = 8;
             this.clear_end.Text = "очистить конец";
             this.clear_end.UseVisualStyleBackColor = false;
@@ -186,9 +186,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 319);
+            this.button1.Location = new System.Drawing.Point(10, 314);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(886, 25);
+            this.button1.Size = new System.Drawing.Size(911, 25);
             this.button1.TabIndex = 12;
             this.button1.Text = "очистить все";
             this.button1.UseVisualStyleBackColor = true;
@@ -206,9 +206,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button2.Location = new System.Drawing.Point(15, 288);
+            this.button2.Location = new System.Drawing.Point(10, 288);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 25);
+            this.button2.Size = new System.Drawing.Size(220, 20);
             this.button2.TabIndex = 15;
             this.button2.Text = "очистить имя кабеля";
             this.button2.UseVisualStyleBackColor = false;
@@ -219,7 +219,7 @@
             this.fonts_options.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.fonts_options.Location = new System.Drawing.Point(15, 19);
             this.fonts_options.Name = "fonts_options";
-            this.fonts_options.Size = new System.Drawing.Size(200, 25);
+            this.fonts_options.Size = new System.Drawing.Size(220, 20);
             this.fonts_options.TabIndex = 14;
             this.fonts_options.Text = "настройна шрифт";
             this.fonts_options.UseVisualStyleBackColor = false;
@@ -228,12 +228,12 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(14, 66);
+            this.textBox4.Location = new System.Drawing.Point(10, 66);
             this.textBox4.Margin = new System.Windows.Forms.Padding(5);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox4.Size = new System.Drawing.Size(200, 200);
+            this.textBox4.Size = new System.Drawing.Size(220, 200);
             this.textBox4.TabIndex = 13;
             this.textBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mouse_click);
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);

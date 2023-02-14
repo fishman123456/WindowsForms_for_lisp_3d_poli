@@ -49,19 +49,26 @@ namespace WindowsForms_for_lisp_3d_poli
             sbor += "; ; автор Фишман Денис в рамках проекта WF  12-02-2023 \n";
             sbor += "(defun  C:PL100 (/ x1 x2 x3)\n";
             sbor += "(vl-load-com)\n";
-
+            int numstr = 0;
             if (textBox4.Text.Length > 0)
             {
                 foreach (string s in str_box_name)
                 {
+                    
                     sbor += " (command \"_.-layer\" \"_m\" \"";
                     name_kab = textBox4.Text.ToString();
                     sbor +=s;
                     sbor += "\" \"\")\n";
-                    //sbor += "(command \"_.3Dpoly '(";
-                    //sbor += "0 100 100";
-                    //sbor += ")";
-                    //sbor += " \"\")\n";
+                    // дополняем координатами начало, конец. Середину потом запихнем
+
+                    sbor += "(command \"_.3Dpoly\" '(";
+                    sbor += textBox3.Lines[numstr].ToString(); // место для начала кабеля переменная стринг
+                    sbor += ")";
+                    sbor+= "'(" +
+                        textBox1.Lines[numstr].ToString() + // место для конца кабеля переменная стринг
+                        ")";
+                    sbor += " \"\")\n";
+                    numstr++;
                 }
             }
             sbor += ")";

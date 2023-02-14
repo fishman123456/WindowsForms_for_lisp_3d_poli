@@ -9,3 +9,14 @@ C:\Users\Fishman_1\Documents\GitHub\WindowsForms_for_lisp_3d_poli\obj\Debug\Wind
 C:\Users\Fishman_1\Documents\GitHub\WindowsForms_for_lisp_3d_poli\obj\Debug\WindowsForms_for_lisp_3d_poli.csproj.CoreCompileInputs.cache
 C:\Users\Fishman_1\Documents\GitHub\WindowsForms_for_lisp_3d_poli\obj\Debug\WindowsForms_for_lisp_3d_poli.exe
 C:\Users\Fishman_1\Documents\GitHub\WindowsForms_for_lisp_3d_poli\obj\Debug\WindowsForms_for_lisp_3d_poli.pdb
+C:\Users\Fishman.DB.CORP\Documents\GitHub\WindowsForms_for_lisp_3d_poli\bin\Debug\WindowsForms_for_lisp_3d_poli.exe.config
+C:\Users\Fishman.DB.CORP\Documents\GitHub\WindowsForms_for_lisp_3d_poli\bin\Debug\WindowsForms_for_lisp_3d_poli.exe
+C:\Users\Fishman.DB.CORP\Documents\GitHub\WindowsForms_for_lisp_3d_poli\bin\Debug\WindowsForms_for_lisp_3d_poli.pdb
+C:\Users\Fishman.DB.CORP\Documents\GitHub\WindowsForms_for_lisp_3d_poli\obj\Debug\WindowsForms_for_lisp_3d_poli.csproj.AssemblyReference.cache
+C:\Users\Fishman.DB.CORP\Documents\GitHub\WindowsForms_for_lisp_3d_poli\obj\Debug\WindowsForms_for_lisp_3d_poli.csproj.SuggestedBindingRedirects.cache
+C:\Users\Fishman.DB.CORP\Documents\GitHub\WindowsForms_for_lisp_3d_poli\obj\Debug\WindowsForms_for_lisp_3d_poli.Form1.resources
+C:\Users\Fishman.DB.CORP\Documents\GitHub\WindowsForms_for_lisp_3d_poli\obj\Debug\WindowsForms_for_lisp_3d_poli.Properties.Resources.resources
+C:\Users\Fishman.DB.CORP\Documents\GitHub\WindowsForms_for_lisp_3d_poli\obj\Debug\WindowsForms_for_lisp_3d_poli.csproj.GenerateResource.cache
+C:\Users\Fishman.DB.CORP\Documents\GitHub\WindowsForms_for_lisp_3d_poli\obj\Debug\WindowsForms_for_lisp_3d_poli.csproj.CoreCompileInputs.cache
+C:\Users\Fishman.DB.CORP\Documents\GitHub\WindowsForms_for_lisp_3d_poli\obj\Debug\WindowsForms_for_lisp_3d_poli.exe
+C:\Users\Fishman.DB.CORP\Documents\GitHub\WindowsForms_for_lisp_3d_poli\obj\Debug\WindowsForms_for_lisp_3d_poli.pdb
