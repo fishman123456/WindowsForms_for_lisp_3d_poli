@@ -59,12 +59,15 @@ namespace WindowsForms_for_lisp_3d_poli
 
         private void save_f_Click(object sender, EventArgs e)
         {
-
+            sbor = "";
             sbor += "; ; автор Фишман Денис в рамках проекта WF  12-02-2023 \n";
             sbor += "(defun  C:PL100 (/ x1 x2 x3)\n";
             sbor += "(vl-load-com)\n";
             int numstr = 0;
             int numstr_centr = 0;
+            try
+            {
+
             if (textBox4.Text.Length > 0)
             {
                 foreach (string s in str_box_name)
@@ -96,7 +99,13 @@ namespace WindowsForms_for_lisp_3d_poli
                 }
             }
             sbor += ")";
-
+               
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString ());
+                
+            }
             if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
                 return;
             // получаем выбранный файл
@@ -104,6 +113,7 @@ namespace WindowsForms_for_lisp_3d_poli
             // сохраняем текст в файл
             System.IO.File.WriteAllText(filename, sbor);
             MessageBox.Show("Файл сохранен");
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -202,18 +212,7 @@ namespace WindowsForms_for_lisp_3d_poli
 
         private void mouse_click(object sender, MouseEventArgs e)
         {
-            if (textBox4.Text.Length > 0)
-            {
-                if (!string.IsNullOrEmpty(textBox4.Text))
-                {
-                    if (textBox3.Text == "\n")
-                    {
-                       // str_box_name.Add(textBox4.Text.Length.ToString());
-                    }
-                }
-                MessageBox.Show(textBox4.Text.ToString());
-
-            }
+           
         }
     }
 }
