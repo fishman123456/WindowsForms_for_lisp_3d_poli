@@ -49,6 +49,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.fonts_options = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -121,7 +122,7 @@
             this.save_f.Name = "save_f";
             this.save_f.Size = new System.Drawing.Size(220, 20);
             this.save_f.TabIndex = 5;
-            this.save_f.Text = "сохранить в файл";
+            this.save_f.Text = "сохранить в другой файл";
             this.save_f.UseVisualStyleBackColor = false;
             this.save_f.Click += new System.EventHandler(this.save_f_Click);
             // 
@@ -239,11 +240,22 @@
             this.textBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mouse_click);
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(356, 342);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(229, 20);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Сохранять в другом файле!!!";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 361);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.fonts_options);
@@ -294,6 +306,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button fonts_options;
         public System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
