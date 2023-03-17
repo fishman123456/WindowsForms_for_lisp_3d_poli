@@ -158,14 +158,12 @@ namespace WindowsForms_for_lisp_3d_poli
                         }
                         centr_c= 0;
 
-                        foreach (var item in end)
-                        {
+                       
                             sbor += "'(";
                             sbor += textBox4.Lines[end_c].ToString(); // место для конечных вершин кабеля переменная стринг
                             sbor += ")";
                             end_c++;
-                        }
-                        end_c=0;
+                       
                         sbor += " \"\")\n";
                         //name_c++;
                     }
