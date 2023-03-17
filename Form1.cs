@@ -64,7 +64,7 @@ namespace WindowsForms_for_lisp_3d_poli
             sbor += "(defun  C:PL100 (/ x1 x2 x3)\n";
             sbor += "(vl-load-com)\n";
             int numstr = 0;
-            int numstr_centr = 1;
+            int numstr_centr = 0;
             try
             {
 
