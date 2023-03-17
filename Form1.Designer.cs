@@ -50,6 +50,7 @@
             this.fonts_options = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -244,17 +245,30 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(173, 358);
+            this.label5.Location = new System.Drawing.Point(61, 342);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(607, 20);
+            this.label5.Size = new System.Drawing.Size(834, 20);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Сохранять в другом файле!!!  и обязательно нажать кнопку заполнить список ";
+            this.label5.Text = "Сохранять в другом файле!!!  и обязательно  заполнить список последней координаты" +
+    " по каждому кабелю ";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(61, 361);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(209, 20);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "----------------------------------------";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 390);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
@@ -306,6 +320,7 @@
         private System.Windows.Forms.Button fonts_options;
         public System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 

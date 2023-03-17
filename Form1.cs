@@ -38,15 +38,14 @@ namespace WindowsForms_for_lisp_3d_poli
             saveFileDialog1.Filter = "Text files(*.lsp)|*.lsp|All files(*.*)|*.*";
             // описание подсказок
             ToolTip t_one = new ToolTip();
-            t_one.SetToolTip(textBox2, "Начало кабельной линии (X Y Z)");
+            t_one.SetToolTip(textBox2, "Начало кабельной линии (X Y Z) один кабель можно");
             ToolTip t_two = new ToolTip();
-            t_two.SetToolTip(textBox3, "Промежуточные точки кабельной линии (X Y Z)");
+            t_two.SetToolTip(textBox3, "Промежуточные точки кабельной линии (X Y Z) много точек можно");
             ToolTip t_three = new ToolTip();
-            t_three.SetToolTip(textBox4, "Конец кабельной линии (X Y Z)");
+            t_three.SetToolTip(textBox4, "Конец кабельной линии (X Y Z) много точек можно");
             ToolTip t_four = new ToolTip();
-            t_four.SetToolTip(textBox1, "Имя кабельной линии (X Y Z)");
-            ToolTip t_five = new ToolTip();
-            t_five.SetToolTip(rez_1, "Для создания списка нажми меня");
+            t_four.SetToolTip(textBox1, "Имя кабельной линии (X Y Z) много имен можно");
+           
         }
 
         private void clear_beg_Click(object sender, EventArgs e)
@@ -256,6 +255,11 @@ namespace WindowsForms_for_lisp_3d_poli
         }
 
         private void mouse_click(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
