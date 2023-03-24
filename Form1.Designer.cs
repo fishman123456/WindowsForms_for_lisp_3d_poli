@@ -50,7 +50,6 @@
             this.fonts_options = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -60,24 +59,24 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(240, 66);
+            this.textBox2.Location = new System.Drawing.Point(331, 90);
             this.textBox2.Margin = new System.Windows.Forms.Padding(5);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(220, 200);
+            this.textBox2.Size = new System.Drawing.Size(300, 220);
             this.textBox2.TabIndex = 1;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(470, 66);
+            this.textBox3.Location = new System.Drawing.Point(641, 90);
             this.textBox3.Margin = new System.Windows.Forms.Padding(5);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox3.Size = new System.Drawing.Size(220, 200);
+            this.textBox3.Size = new System.Drawing.Size(300, 220);
             this.textBox3.TabIndex = 2;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             this.textBox3.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.mouse_click);
@@ -85,21 +84,21 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(700, 66);
+            this.textBox4.Location = new System.Drawing.Point(950, 90);
             this.textBox4.Margin = new System.Windows.Forms.Padding(5);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox4.Size = new System.Drawing.Size(220, 200);
+            this.textBox4.Size = new System.Drawing.Size(300, 220);
             this.textBox4.TabIndex = 3;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // rez_1
             // 
             this.rez_1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.rez_1.Location = new System.Drawing.Point(240, 19);
+            this.rez_1.Location = new System.Drawing.Point(331, 43);
             this.rez_1.Name = "rez_1";
-            this.rez_1.Size = new System.Drawing.Size(220, 20);
+            this.rez_1.Size = new System.Drawing.Size(300, 20);
             this.rez_1.TabIndex = 4;
             this.rez_1.Text = "имя кабеля заполнить список";
             this.rez_1.UseVisualStyleBackColor = false;
@@ -108,9 +107,9 @@
             // rez_2
             // 
             this.rez_2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.rez_2.Location = new System.Drawing.Point(470, 19);
+            this.rez_2.Location = new System.Drawing.Point(641, 43);
             this.rez_2.Name = "rez_2";
-            this.rez_2.Size = new System.Drawing.Size(220, 20);
+            this.rez_2.Size = new System.Drawing.Size(300, 20);
             this.rez_2.TabIndex = 12;
             this.rez_2.Text = "резерв";
             this.rez_2.UseVisualStyleBackColor = false;
@@ -119,9 +118,9 @@
             // save_f
             // 
             this.save_f.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.save_f.Location = new System.Drawing.Point(701, 19);
+            this.save_f.Location = new System.Drawing.Point(950, 43);
             this.save_f.Name = "save_f";
-            this.save_f.Size = new System.Drawing.Size(220, 20);
+            this.save_f.Size = new System.Drawing.Size(300, 20);
             this.save_f.TabIndex = 5;
             this.save_f.Text = "сохранить в другой файл";
             this.save_f.UseVisualStyleBackColor = false;
@@ -129,10 +128,11 @@
             // 
             // clear_beg
             // 
+            this.clear_beg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.clear_beg.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.clear_beg.Location = new System.Drawing.Point(240, 288);
+            this.clear_beg.Location = new System.Drawing.Point(331, 333);
             this.clear_beg.Name = "clear_beg";
-            this.clear_beg.Size = new System.Drawing.Size(220, 20);
+            this.clear_beg.Size = new System.Drawing.Size(300, 20);
             this.clear_beg.TabIndex = 8;
             this.clear_beg.Text = "очистить начало";
             this.clear_beg.UseVisualStyleBackColor = false;
@@ -140,10 +140,11 @@
             // 
             // clear_centr
             // 
+            this.clear_centr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.clear_centr.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.clear_centr.Location = new System.Drawing.Point(470, 288);
+            this.clear_centr.Location = new System.Drawing.Point(641, 333);
             this.clear_centr.Name = "clear_centr";
-            this.clear_centr.Size = new System.Drawing.Size(220, 20);
+            this.clear_centr.Size = new System.Drawing.Size(300, 20);
             this.clear_centr.TabIndex = 9;
             this.clear_centr.Text = "очистьть промежуточные";
             this.clear_centr.UseVisualStyleBackColor = false;
@@ -151,10 +152,11 @@
             // 
             // clear_end
             // 
+            this.clear_end.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.clear_end.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.clear_end.Location = new System.Drawing.Point(700, 288);
+            this.clear_end.Location = new System.Drawing.Point(950, 333);
             this.clear_end.Name = "clear_end";
-            this.clear_end.Size = new System.Drawing.Size(220, 20);
+            this.clear_end.Size = new System.Drawing.Size(300, 20);
             this.clear_end.TabIndex = 10;
             this.clear_end.Text = "очистить конец";
             this.clear_end.UseVisualStyleBackColor = false;
@@ -163,7 +165,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(282, 47);
+            this.label1.Location = new System.Drawing.Point(418, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 13);
             this.label1.TabIndex = 9;
@@ -172,7 +174,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(513, 48);
+            this.label2.Location = new System.Drawing.Point(716, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 13);
             this.label2.TabIndex = 10;
@@ -181,7 +183,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(747, 48);
+            this.label3.Location = new System.Drawing.Point(1041, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 13);
             this.label3.TabIndex = 11;
@@ -189,9 +191,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(10, 314);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(21, 359);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(911, 25);
+            this.button1.Size = new System.Drawing.Size(1229, 25);
             this.button1.TabIndex = 11;
             this.button1.Text = "очистить все";
             this.button1.UseVisualStyleBackColor = true;
@@ -200,7 +203,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(62, 47);
+            this.label4.Location = new System.Drawing.Point(126, 72);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 13);
             this.label4.TabIndex = 16;
@@ -208,10 +211,11 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button2.Location = new System.Drawing.Point(10, 288);
+            this.button2.Location = new System.Drawing.Point(21, 333);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(220, 20);
+            this.button2.Size = new System.Drawing.Size(300, 20);
             this.button2.TabIndex = 7;
             this.button2.Text = "очистить имя кабеля";
             this.button2.UseVisualStyleBackColor = false;
@@ -220,9 +224,9 @@
             // fonts_options
             // 
             this.fonts_options.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.fonts_options.Location = new System.Drawing.Point(15, 19);
+            this.fonts_options.Location = new System.Drawing.Point(21, 43);
             this.fonts_options.Name = "fonts_options";
-            this.fonts_options.Size = new System.Drawing.Size(220, 20);
+            this.fonts_options.Size = new System.Drawing.Size(300, 20);
             this.fonts_options.TabIndex = 6;
             this.fonts_options.Text = "настройна шрифт";
             this.fonts_options.UseVisualStyleBackColor = false;
@@ -231,12 +235,12 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(10, 66);
+            this.textBox1.Location = new System.Drawing.Point(21, 90);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(220, 200);
+            this.textBox1.Size = new System.Drawing.Size(300, 220);
             this.textBox1.TabIndex = 0;
             this.textBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mouse_click);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
@@ -244,31 +248,20 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(61, 342);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(63, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(834, 20);
+            this.label5.Size = new System.Drawing.Size(960, 16);
             this.label5.TabIndex = 13;
             this.label5.Text = "Сохранять в другом файле!!!  и обязательно  заполнить список последней координаты" +
-    " по каждому кабелю ";
+    " по каждому кабелю заполнить начало для каждого кабеля";
             this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(61, 361);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(209, 20);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "----------------------------------------";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 390);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(1274, 411);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
@@ -288,9 +281,11 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1290, 450);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(950, 400);
+            this.MinimumSize = new System.Drawing.Size(1290, 450);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "U83_F";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -320,7 +315,6 @@
         private System.Windows.Forms.Button fonts_options;
         public System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
     }
 }
 
