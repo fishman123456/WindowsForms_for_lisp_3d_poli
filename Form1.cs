@@ -145,6 +145,7 @@ namespace WindowsForms_for_lisp_3d_poli
                         // середину запихали осталось чуть..... 17-03-2023
                         sbor += "(command \"_.3Dpoly\" '(";
                         sbor += textBox2.Lines[begin_c].ToString(); // место для начала кабеля переменная стринг
+                                                                    // одно начало  29-08-2023
                         sbor += ")";
                         
                         // здесь нужно середину вставить
