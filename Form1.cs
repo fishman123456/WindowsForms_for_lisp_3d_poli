@@ -38,7 +38,7 @@ namespace WindowsForms_for_lisp_3d_poli
             saveFileDialog1.Filter = "Text files(*.lsp)|*.lsp|All files(*.*)|*.*";
             // описание подсказок
             ToolTip t_one = new ToolTip();
-            t_one.SetToolTip(textBox2, "Начало кабельной линии (X Y Z) один кабель можно");
+            t_one.SetToolTip(textBox2, "Начало кабельной линии (X Y Z) много точек можно");
             ToolTip t_two = new ToolTip();
             t_two.SetToolTip(textBox3, "Промежуточные точки кабельной линии (X Y Z) много точек можно");
             ToolTip t_three = new ToolTip();
@@ -66,6 +66,7 @@ namespace WindowsForms_for_lisp_3d_poli
         private void save_f_Click(object sender, EventArgs e)
         {
             // заполняем список текстбоксом 1, имя кабеля
+            CheckDate();
             str_box_name.Append(textBox1.TextLength.ToString());
             if (!string.IsNullOrEmpty(Convert.ToString(textBox1.Text)))
             {
@@ -142,23 +143,24 @@ namespace WindowsForms_for_lisp_3d_poli
                         sbor += s;
                         sbor += "\" \"\")\n";
                         // дополняем координатами начало, конец. Середину потом запихнем 14-02-2023
+
                         // середину запихали осталось чуть..... 17-03-2023
+
                         sbor += "(command \"_.3Dpoly\" '(";
                         sbor += textBox2.Lines[begin_c].ToString(); // место для начала кабеля переменная стринг
-                                                                    // одно начало  29-08-2023
+                                                                   // одно начало  29-08-2023
+                                                                   // много начала 30-08-2023
                         sbor += ")";
-                        
+                        begin_c++;
                         // здесь нужно середину вставить
-                        foreach (var item in centr)
-                        {
-                            sbor += "'(";
-                            sbor += textBox3.Lines[centr_c].ToString(); // место для промежуточных вершин кабеля переменная стринг
-                            sbor += ")";
-                            centr_c ++;
-                        }
-                        centr_c= 0;
+                        
+                            //sbor += "'(";
+                            //sbor += textBox3.Lines[centr_c].ToString(); // место для промежуточных вершин кабеля переменная стринг
+                            //sbor += ")";
+                            //centr_c ++;
+                        
 
-                       
+                       // конец добавляем
                             sbor += "'(";
                             sbor += textBox4.Lines[end_c].ToString(); // место для конечных вершин кабеля переменная стринг
                             sbor += ")";
@@ -264,5 +266,28 @@ namespace WindowsForms_for_lisp_3d_poli
         {
 
         }
+        #region
+        // проверка по дате использования
+        public static void CheckDate()
+        {
+            DateTime dt1 = DateTime.Now;
+            DateTime dt2 = DateTime.Parse("27/09/2023");
+           
+
+            if (dt1.Date > dt2.Date)
+            {
+                MessageBox.Show("Your Application is Expire");
+                // Выход из проложения добавил 12-07-2023. Чтобы порядок был....
+                Application.Exit();
+                //w1.Close();
+            }
+            else
+            {
+
+                MessageBox.Show("Работайте до   " + dt2.ToString());
+            }
+
+        }
+        #endregion
     }
 }
