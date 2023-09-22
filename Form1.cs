@@ -45,7 +45,7 @@ namespace WindowsForms_for_lisp_3d_poli
             t_three.SetToolTip(textBox4, "Конец кабельной линии (X Y Z) много точек можно");
             ToolTip t_four = new ToolTip();
             t_four.SetToolTip(textBox1, "Имя кабельной линии (X Y Z) много имен можно");
-           
+
         }
 
         private void clear_beg_Click(object sender, EventArgs e)
@@ -139,7 +139,7 @@ namespace WindowsForms_for_lisp_3d_poli
 
                         sbor += " (command \"_.-layer\" \"_m\" \"";
                         //имя кабеля берем из текстбокса 1
-                       // name_kab = textBox1.Text.ToString();
+                        // name_kab = textBox1.Text.ToString();
                         sbor += s;
                         sbor += "\" \"\")\n";
                         // дополняем координатами начало, конец. Середину потом запихнем 14-02-2023
@@ -148,30 +148,39 @@ namespace WindowsForms_for_lisp_3d_poli
 
                         sbor += "(command \"_.3Dpoly\" '(";
                         sbor += textBox2.Lines[begin_c].ToString(); // место для начала кабеля переменная стринг
-                                                                   // одно начало  29-08-2023
-                                                                   // много начала 30-08-2023
+                                                                    // одно начало  29-08-2023
+                                                                    // много начала 30-08-2023
                         sbor += ")";
                         begin_c++;
                         // здесь нужно середину вставить
-                        
-                            //sbor += "'(";
-                            //sbor += textBox3.Lines[centr_c].ToString(); // место для промежуточных вершин кабеля переменная стринг
-                            //sbor += ")";
-                            //centr_c ++;
-                        
-
-                       // конец добавляем
+                        // много точек в середине 21-09-2023 думаю
+                        if (textBox3.Text.Length > 0)
+                        {
+                            string[] lines = textBox3.Text.Split('\n');
+                            foreach (string line in lines)
+                            {
+                                {
+                                    sbor += "'(";
+                                    sbor += textBox3.Lines[centr_c].ToString(); // место для промежуточных вершин кабеля переменная стринг
+                                    sbor += ")";
+                                    centr_c++;
+                                }
+                            }
+                            centr_c = 0;
+                        }
+                            // конец добавляем
                             sbor += "'(";
                             sbor += textBox4.Lines[end_c].ToString(); // место для конечных вершин кабеля переменная стринг
                             sbor += ")";
                             end_c++;
-                       
-                        sbor += " \"\")\n";
-                        //name_c++;
-                    }
-                }
-                sbor += ")";
 
+                            sbor += " \"\")\n";
+                            //name_c++;
+                        }
+                    }
+                    sbor += ")";
+                // закрываем скобку, обнуляем координаты begin_c, centr_c, end_c, можно занова начинать
+                begin_c = 0; centr_c = 0; end_c = 0;
             }
             catch (Exception ex)
             {
@@ -272,7 +281,7 @@ namespace WindowsForms_for_lisp_3d_poli
         {
             DateTime dt1 = DateTime.Now;
             DateTime dt2 = DateTime.Parse("27/09/2023");
-           
+
 
             if (dt1.Date > dt2.Date)
             {
