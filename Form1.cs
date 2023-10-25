@@ -280,12 +280,12 @@ namespace WindowsForms_for_lisp_3d_poli
         public static void CheckDate()
         {
             DateTime dt1 = DateTime.Now;
-            DateTime dt2 = DateTime.Parse("27/09/2023");
+            DateTime dt2 = DateTime.Parse("01/01/2024");
 
 
             if (dt1.Date > dt2.Date)
             {
-                MessageBox.Show("Your Application is Expire");
+                MessageBox.Show("Срок истек...");
                 // Выход из проложения добавил 12-07-2023. Чтобы порядок был....
                 Application.Exit();
                 //w1.Close();
